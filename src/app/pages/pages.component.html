@@ -1,0 +1,44 @@
+<mat-toolbar>
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened">
+      menu
+    </mat-icon>
+    <mat-icon *ngIf="sidenav.opened">
+      close
+    </mat-icon>
+  </button>
+  <span>Yavitec</span>
+  <img src="" alt="">
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z15" mode="side" opened>
+    <img class="avatar mat-elevation-z15" src="https://cdn-icons-png.flaticon.com/512/4128/4128176.png" alt="">
+    <h4 class="name">Administrador</h4>
+    <p class="designation">Proyecto Integrador</p>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span><a [routerLink]="['project/project']">Inicio</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>article</mat-icon>
+      <span><a [routerLink]="['project/projectCreate']">Registros</a></span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>description</mat-icon>
+      <span><a [routerLink]="['project/projectDetails']">Proyectos </a></span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>logout</mat-icon>
+      <span><a [routerLink]="['']">Salir</a></span>
+    </button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z15">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
