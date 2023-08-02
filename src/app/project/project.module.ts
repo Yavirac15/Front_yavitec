@@ -10,6 +10,11 @@ import { SegundoSemestreComponent } from './segundo-semestre/segundo-semestre.co
 import { TercerSemestreComponent } from './tercer-semestre/tercer-semestre.component';
 import { CuartoSemestreComponent } from './cuarto-semestre/cuarto-semestre.component';
 import { QuintoSemestreComponent } from './quinto-semestre/quinto-semestre.component';
+import { PrimerProyectoComponent } from './primer-proyecto/primer-proyecto.component';
+import { SegundoProyectoComponent } from './segundo-proyecto/segundo-proyecto.component';
+import { TercerProyectoComponent } from './tercer-proyecto/tercer-proyecto.component';
+import { CuartoProyectoComponent } from './cuarto-proyecto/cuarto-proyecto.component';
+import { QuintoProyectoComponent } from './quinto-proyecto/quinto-proyecto.component';
 
 
 
@@ -23,7 +28,12 @@ import { QuintoSemestreComponent } from './quinto-semestre/quinto-semestre.compo
     SegundoSemestreComponent,
     TercerSemestreComponent,
     CuartoSemestreComponent,
-    QuintoSemestreComponent
+    QuintoSemestreComponent,
+    PrimerProyectoComponent,
+    SegundoProyectoComponent,
+    TercerProyectoComponent,
+    CuartoProyectoComponent,
+    QuintoProyectoComponent
   ],
   imports: [
     CommonModule,
