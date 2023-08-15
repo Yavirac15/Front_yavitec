@@ -1,99 +1,56 @@
-<div class="cuadros">
-
-  <div class="row">
-    <div class="col-sm-6  ">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Proyectos primer semestre</h4>
-          <p class="card-text">Registra tu proyecto si eres de </p>
-          <p class="card-text">primer semestre</p>
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg btn-block"
-            (click)="primero()"
-          >
-            Registrate
-          </button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Container">
+      <form action="" method="post">
+        <h2>Resgistro Proyecto Integrador</h2>
+        <div class="input-box">
+          <label for="name">Nombre del proyecto</label>&nbsp;
+          <input type="text" placeholder="" name="name" required />
         </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Proyectos segundo semetre</h4>
-          <p class="card-text">Registra tu proyecto si eres de </p>
-          <p class="card-text">segundo semestre</p>
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg btn-block"
-            (click)="segundo()"
-          >
-            Registrate
-          </button>
+        <br />
+        <div class="content">
+          <div class="input-box">
+            <label for="name">Cedula</label
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" placeholder="" name="name" required />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Descripcion</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Nivel</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Primero</option>
+              <option>Segundo</option>
+              <option>Tercero</option>
+              <option>Cuarto</option>
+              <option>Quinto</option>
+            </select>
+          </div>
+          <br>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+            <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Proyectos tercer semestre</h4>
-          <p class="card-text">Registra tu proyecto si eres de </p>
-          <p class="card-text">tercer semestre</p>
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg btn-block"
-            (click)="tercero()"
-          >
-            Registrate
-          </button>
+        <br />
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Guardar</button>
         </div>
-      </div>
+      </form>
     </div>
-
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Proyectos cuarto semestre</h4>
-          <p class="card-text">Registra tu proyecto si eres de </p>
-          <p class="card-text">cuarto semestre</p>
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg btn-block"
-            (click)="cuarto()"
-          >
-            Registrate
-          </button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Proyectos quinto semestre</h4>
-          <p class="card-text">Registra tu proyecto si eres de </p>
-          <p class="card-text">quinto semestre</p>
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg btn-block"
-            (click)="quinto()"
-          >
-            Registrate
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
+  </body>
+</html>
