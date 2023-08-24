@@ -1,0 +1,14 @@
+*{
+  padding: 100;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  width: 150vh;
+}

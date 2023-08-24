@@ -22,7 +22,7 @@ import { ProjectModule } from './project/project.module';
     NgbModule,
     PagesModule,
     ProjectModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
